@@ -87,3 +87,9 @@
 ## Differences from SparkSL to GLSL
 
 # Scripting API
+
+# Publishing
+
+## Requirements
+
+## Spark AR hub
