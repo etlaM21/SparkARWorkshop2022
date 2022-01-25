@@ -10,7 +10,8 @@ Everything here refers to the workings of **Spark AR v129** and won't be updated
     - [Requirements](#requirements)
     - [Making the effect accesable on Instagram / Facebook](#making-the-effect-accesable-on-instagram--facebook)
   - [Problems to look out for](#problems-to-look-out-for)
-  - [Useful Ressources](#useful-ressources)
+  - [Ressources](#ressources)
+    - [Workshop Assets](#workshop-assets)
     - [Offical Ressources](#offical-ressources)
     - [Unofficial Ressources](#unofficial-ressources)
 
@@ -24,9 +25,15 @@ For testing AR experiences without the need to upload them to the Spark AR hub (
 
 ### Requirements
 
-[File sizes]
+The .arexport file containing all the zipped original assets needs to be under 40 MB
 
-[Capabilities]
+The .arfx file containt the effect with compressed assets needs to be ...
+  * ... **less than 10 MB for Facebook** effects
+  * ... **less than 4 MB for Instagram** effects
+
+Some features are only available for effects published on Facebook.
+
+Public effects have to meet the [Spark AR Policies](https://sparkar.facebook.com/ar-studio/learn/publishing/spark-ar-review-policies) and [Facebook Community Standards](https://transparency.fb.com/de-de/policies/community-standards/) and / or [Instagram Community Guidelines](https://help.instagram.com/477434105621119).
 
 ### Making the effect accesable on Instagram / Facebook
 
@@ -49,9 +56,15 @@ Should an **audio clip only play on Apple devices**, then your audio file is in 
 If your **shader looks different in Spark AR than on your device**, the issue could be because of float precision. SparkSL only supports 16-bit floats, more about this [here](https://sparkar.facebook.com/ar-studio/learn/sparksl/cross-device-shader-sparksl#avoid). You should be careful when normalizing values or making use of exponential functions. SparkSL also provides [utility functions like "safeNormalize"](https://sparkar.facebook.com/ar-studio/learn/sparksl/sparksl-api/utils) to help you avoid such problems.
 
 
-## Useful Ressources
+## Ressources
+
+### Workshop Assets
+
+If you don't want to clone this whole repository but still access the **assets used and example projects**, you can **download a .zip** (23 MB) here: [files.maltehillebrand.de/zip/SparkARWorkshop2022.zip](https://files.maltehillebrand.de/zip/SparkARWorkshop2022.zip)
 
 ### Offical Ressources
+
+Offical **documentation** for Spark AR can be found here: [sparkar.facebook.com/ar-studio/learn](https://sparkar.facebook.com/ar-studio/learn/)
 
 Official **assets for face filter** creation can be found here: [lookaside.facebook.com/developers/resources/?id=Face-reference-assets-classic.zip](https://lookaside.facebook.com/developers/resources/?id=Face-reference-assets-classic.zip)
 

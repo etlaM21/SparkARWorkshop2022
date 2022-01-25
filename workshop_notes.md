@@ -11,6 +11,7 @@
     - [Spark AR player on device](#spark-ar-player-on-device)
   - [Limitations](#limitations)
 - [Using Spark AR](#using-spark-ar)
+  - [Startup Screen](#startup-screen)
   - [Interface](#interface)
     - [Viewport](#viewport)
     - [Scene](#scene)
@@ -115,6 +116,10 @@
 
 # Using Spark AR
 
+## Startup Screen
+
+* Different templates to serve as starting point and to dissect
+
 ## Interface
 
 ### Viewport
@@ -133,9 +138,18 @@
 
 ### Lights
 
+* Maximum is 5 light sources + one envivronment light
+* Keep in mind: The light is not gonna effect the camera image
+  * Just the Spark AR objects!
+
 ### Particle Systems
 
 ### Audio playback
+
+* Spark AR only accepts audio in .m4a format with ...
+  * Sampling rate: 441000Hz
+  * Audio channel: Mono
+  * Audio codec: AAC or ALAC (not working on Android device)
 
 ### Scene Understanding
 
@@ -176,6 +190,11 @@
 ## ORM texturing (PBR with seperated channels)
 
 # Target tracking
+
+* Fixed or Movable Target:
+  * _Fixed_ means that once the target is recognized, the camera will position the objects there in camera space. It will NOT move when the target moves.
+  * _Movable_ means the opposite and recalculates the target's position each frame.
+* LIMITED to a single target!
 
 # Publishing
 
